@@ -1,0 +1,313 @@
+*{
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: #d6d6d6;
+}
+/* 
+    font-family: 'Outfit', sans-serif;
+*/
+.navegacion{
+    padding:20px 0;
+    background-color: #d17518;
+    box-shadow: 0px 0px 10px gray;
+    border-bottom: 4px solid white;
+    position: fixed;
+    width: 100%;
+}
+.navegacion h1{
+    font-size: 40px;
+    color:white;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px #383838;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.container__question{
+    padding: 110px 0 0;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+}
+.container__question h2{
+    font-size: 25px;
+    padding:15px;
+    text-shadow: 2px 2px 2px #ffffff;
+
+}
+.container__targets{
+    padding:20px 50px;
+}
+.target{
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #c9c9c9;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.target__img {
+    margin-right: 30px;
+}
+.target__img img{
+    width: 7rem;
+}
+
+.target__info h4{
+    padding:5px 10px 5px 3px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+.target__info h4 span{
+    font-size: 22px;
+}
+.target__info p{
+    margin-left: 10px;
+}
+.eliminarHorario{
+
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+ 
+    overflow-y: auto;
+    overflow-x: hidden !important;
+
+    background-color: #ffffff; 
+}
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    width: 85%;
+    height: 100%; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* LOGIN */
+.container__login{
+    padding:30px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.container__login h2{
+    font-size: 40px;
+    color:black;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px #bbbbbb;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.container__login .container__inputs{
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+}
+.container__login .container__inputs input{
+    padding: 12px 15px;
+    margin:7px 0px;
+    border-radius: 5px;
+    border:1px solid gray;
+
+}
+.container__btnLogin{
+    display: flex;
+    justify-content: center;
+}
+.container__btnLogin input{
+    padding:20px;
+    width: 100%;
+    margin:0 auto;
+    border-radius: 5px;
+    border:none;
+    background-color: #925d25;
+    color:white;
+    cursor: pointer;
+
+
+}
+.container__btnLogin input:hover{
+    background-color: #d38837;
+
+}
+
+/* LOGIN */
+
+.container__crud{
+     margin-top: 40px;
+}
+.eliminarHorario{
+    padding:10px; 
+    width: 100%;
+    background-color: #df3131;
+    color:white;
+    margin:10px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eliminarHorario:hover{
+    background-color: #c62424;
+}
+.titleGestionHorarios{
+    font-size: 25px;
+    border-bottom: 3px solid #3dad2e;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.btnCrearHorario{
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #3dad2e;
+    color:white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.btnCrearHorario:hover{
+    background-color: #278e19;
+}
+.btnCrearHorario2{
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e67ad;
+    color:white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.btnCrearHorario2:hover{
+    background-color: #1b4d8a;
+}
+.container__inputsHorarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__inputsHorarios input{
+    padding: 10px;
+    border-radius: 5px;
+    margin:5px;
+    outline: none;
+    border:none;
+    border:1px solid gray;
+}
+.container__btnsHorarios{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.container__CrearHorarios{
+
+}
+
+
+@media (max-width:540px) {
+    .container__targets{
+        padding:20px 25px;
+    }
+    .navegacion h1{
+        font-size: 30px;
+    }
+    .target__img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0px;
+
+    }
+    .target__img img{
+        width: 7rem;
+    }
+    .target{
+        padding: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 20px 0;
+    }
+    .container__login{
+        padding:0px !important;
+        width: auto  !important;
+    }
+    .container__login h2{
+        margin-bottom: 30px;
+        font-size: 30px !important;
+    }
+    .container__login .container__inputs{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__login .container__inputs input{
+        padding: 8px 15px;
+        margin:10px 0px;
+        border-radius: 5px;
+        border:none;
+        border:1px solid gray;
+        width: 90%;
+    
+    }
+    .container__btnLogin input{
+        padding:18px 0;
+        width: 200px;
+        margin:10px auto !important;
+        border-radius: 5px;
+        border:none;
+        background-color: #925d25;
+        color:white;
+        cursor: pointer;
+    
+    
+    }
+    .container__inputsHorarios input{
+        padding: 10px;
+        border-radius: 5px;
+        margin:5px;
+        outline: none;
+        border:none;
+        border:1px solid gray;
+        width: 100%;
+    }
+
+    
+}
+
+
+
+

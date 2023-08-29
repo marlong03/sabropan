@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>SABROPAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+</head>
+<body class="bgGrayLight">
+    <header>
+        <nav class="navegacion">
+           <h1 id="title">SABROPAN</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container__question">
+                <h2>¿A qué hora sale el pan?</h2>
+            </div>
+            <div class="container__targets" id="containerTargets">
+               
+            </div>
+        </section>
+
+        <!-- The Modal -->
+        <div id="modalLogin" class="modal">
+            <div class="modal-content">
+                <div>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="container__login">
+                    <div>
+                        <h2>SABROPAN</h2>
+                    </div>
+                    <div class="container__inputs">
+                        <input type="text" placeholder="Usuario" id="usuarioUser">
+                        <input type="password" placeholder="Contraseña" id="contrasenaUser">
+                    </div>
+                    <div class="container__btnLogin">
+                        <input type="button" value="Iniciar sesión" id="btnIniciarSesion">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- The Modal Creates -->
+         <div id="modalCrud" class="modal">
+            <div class="modal-content">
+                <div>
+                    <span class="close"id="close2">&times;</span>
+                </div>
+                <div class="container__crud">
+                    <h2 class="titleGestionHorarios">Gestion de horarios</h2>
+                    <div class="container__CrearHorarios" id="containerCrearHorarios">
+                    <div>
+                        <form action="" method="get">
+                            <div class="container__inputsHorarios">
+
+                                <input type="datetime-local" class="datetime__horario" id="fechaInput">
+                                <input type="text" placeholder="Nombre producto" id="inputNuevoProducto">
+                                <div class="container__btnsHorarios">
+                                   <input type="button" value="Agregar Producto" class="btnCrearHorario"id="btnCrearHorario">
+                                    <input type="reset" id="inputRestablecer">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="target">
+                                    <div class="target__img">
+                                        <img src="imgs/breat.png" alt="imagen pan">
+                                    </div>
+                                    <div class="target__info">
+                                        <h4 id="resultado"> </h4>
+                                        <ul id="containerNuevosProdcutos">
+                                            <p>Todavia no hay productos en este horario</p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <input type="button" value="Publicar aviso" class="btnCrearHorario" id="publicarAviso">
+                    </div>
+                    
+
+                    </div>
+                    <div>
+                        <input type="button" value="Crear aviso" class="btnCrearHorario2" id="btnContainerCrearAviso">
+                    </div>
+                    <div>
+                        <div class="container__targets" id="containerTargetsCreate">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
